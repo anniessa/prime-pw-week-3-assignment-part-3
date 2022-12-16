@@ -64,12 +64,11 @@ if (i > 0) {
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
 
-let totalSupplyChanges= 0;
-for (let i=0; i<supplyChanges.length; i+= 1) {
+let totalSupplyChanges=0;
+for (let i=0; i<supplyChanges.length; i+=1) {
 totalSupplyChanges += supplyChanges[i];
-console.log(totalSupplyChanges);
 }
-
+console.log(totalSupplyChanges);
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
