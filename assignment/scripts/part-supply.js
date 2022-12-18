@@ -77,10 +77,15 @@ console.log(totalSupplyChanges);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
 let totalParts = 572;
 let boxCapacity = 7;
+let boxes = 0;
+let remainder = 572 % 7;
 
-while (totalParts > boxCapacity) {
-    console.log();
-    
-}
+while (totalParts - boxCapacity >= 0) {
+    totalParts -= boxCapacity;
+    boxes+=1;
+    }
+    console.log('There are ' + boxes + ' boxes filled' + ' with ' + remainder + ' parts remaining.');
+   
